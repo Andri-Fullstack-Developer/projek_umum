@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap");
+
+:root {
+    --bg-orange: #f27f0c;
+    --text-white: #fff;
+    --bg-gray: rgb(100, 100, 100, 0.2);
+    --text-black: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+.navbar {
+    background: var(--bg-orange);
+}
+
+nav .container {
+    font-weight: 700;
+    height: 10vh;
+}
+.icon-login {
+    font-weight: 900;
+}
+.garis::before {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--bg-orange); /* warna dan ketebalan garis dapat disesuaikan */
+}
+
+.garis::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--bg-orange); /* warna dan ketebalan garis dapat disesuaikan */
+}
+/* Home */
+.home__container {
+    /* background-image: url("/img/pantai.jpg"); */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    margin-top: 16rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    text-shadow: 3px 3px 3px var(--bg-orange);
+}
+.pendapatan_containe {
+    margin-top: 5rem;
+}
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.batang {
+    margin-top: 8rem;
+}
+.card-body .btn-bg {
+    background: var(--bg-orange);
+    color: var(--text-white);
+}
+.card-body .btn-bg:hover {
+    background: var(--bg-orange);
+    color: var(--text-white);
+}
+.row .btn-bg {
+    background: var(--bg-orange);
+    color: var(--text-white);
+}
+.row .btn-bg:hover {
+    background: var(--bg-orange);
+    color: var(--text-white);
+}
+
+/*  */
+.kontak__container {
+    background: var(--bg-gray);
+    color: var(--bg-orange);
+    width: 100%;
+    height: auto;
+    padding-bottom: 4%;
+}
+
+.kontak {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.peta {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.elemen-icon {
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: var(--bg-orange);
+    gap: 5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.icon,
+.peta {
+    margin-top: 1rem;
+}
+
+.icon a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--bg-orange);
+    transition: transform 0.2s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+}
+
+.icon a:hover {
+    color: var(--text-black);
+    transform: scale(1.2);
+}
+.icon span {
+    margin-left: 1rem;
+}
+.text-kontak {
+    font-size: 2rem;
+}
+
+.container_berita {
+    background: var(--bg-gray);
+    border-radius: 1rem;
+}
+.card-body a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.7rem;
+    transition: transform 0.2s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+}
+.card-body a:hover {
+    transform: scale(1.1);
+}
+
+.jam_tgl {
+    color: rgb(0, 0, 0);
+    margin-top: 0.3rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.6rem;
+}
+.container_berita .btn-infor {
+    font-weight: 700;
+}
+.container_berita .btn-infor:hover {
+    background: transparent;
+    border: 1px solid red;
+    color: black;
+    color: #df4f33;
+}
+
+footer {
+    background: var(--bg-orange);
+    height: auto;
+}
+footer h5,
+p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.text-footer {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+/* Data Berita */
+.data-berita p {
+    color: var(--text-black);
+}
+/* Demo styles  */
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item12 .modebar-btn {
+    display: none;
+}
+
+.card-text {
+    color: #000;
+}
+
+.card-img-top {
+    transition: transform 0.3s;
+    max-height: 200px;
+    /* ukuran maksimal gambar */
+}
+
+.card {
+    overflow: hidden !important;
+}
+
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    /* ukuran saat dihover */
+    max-height: 220px;
+    
+    /* ukuran maksimal gambar saat dihover */
+}
+
+.card-img-top:hover .card{
+    width: 400px !important;
+}
+
+.nav-login {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 3.4rem;
+    white-space: nowrap;
+    background: #ffffff;
+    color: #f27f0c;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.icon-login:hover .nav-login {
+    opacity: 1;
+}
+.conten {
+    margin-top: 80px;
+}
+
+ion-icon {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        float: right !important;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-item:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #f27f0c;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: left;
+}
+
+.dropdown-item:hover:after {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 600px) {
+    .item {
+        grid-template-columns: 1fr;
+    }
+    .home__container {
+        height: 50vh;
+    }
+    .kontak {
+        font-size: 2rem;
+    }
+    .text {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .batang {
+        margin-top: -1rem;
+    }
+    .peta iframe {
+        max-width: 100%;
+        height: auto;
+    }
+    .col h4 {
+        margin-top: 3rem;
+    }
+    .kontak__container {
+        padding-bottom: 3rem;
+    }
+    .nav-login {
+        display: none;
+    }
+}

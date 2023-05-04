@@ -1,0 +1,82 @@
+:root {
+    --primary: #EB1616;
+    --secondary: #191C24;
+    --light: #6C7293;
+    --dark: #000000;
+}
+
+span {
+    color: white;
+    font-size: 1rem;
+}
+
+.bg-profil {
+    background: #191C24;
+}
+
+.file-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-label {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.file-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.tbl,
+.td-1 {
+    border: nome;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.form-profi {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    color: white;
+}
+.form-group {
+    padding: 0.5rem;
+}
+
+.form-group input[type="text"] {
+    background: transparent;
+    border: 1px solid var(--light);
+    color: white;
+}
+
+.form-group input[type="file"] {
+    background: transparent;
+    border: 1px solid var(--light);
+    color: white;
+}
+
+.add {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+.add:hover{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.file {
+    border: 1px solid red;
+}
